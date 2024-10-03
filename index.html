@@ -11,6 +11,7 @@
     <meta name="keywords" content="coffe shop, menu, book a table, recepies" />
 
     <title>Coffe Shop</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="pages/index.css" />
     <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="shortcut icon" href="favicon_coffee_bean.ico" />
@@ -103,7 +104,55 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <div class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <lable for="name" class="form__lable">Name *</lable>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Name Surname"
+                required
+              />
+              <lable for="number of guests" class="form__lable"
+                >Number of guests*</lable
+              >
+              <input
+                type="number"
+                class="form__input"
+                id="number of guests"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <lable for="date" class="form__lable">Date & time *</lable>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="date"
+                required
+              />
+              <lable for="email" class="form__lable">Your email *</lable>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+            <button class="form__button" type="submit">
+              <span class="form__button-text">Book a table</span>
+            </button>
+            <lable class="form__checkbox-lable">
+              <input type="checkbox" class="form__checkbox" />
+              <p class="form__checkbox-text">I agree with the terms of use</p>
+            </lable>
+          </div>
+        </section>
         <section class="menu" id="menu"></section>
         <section class="about" id="contacts"></section>
       </main>
