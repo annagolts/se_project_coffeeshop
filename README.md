@@ -13,4 +13,4 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 ## Plan on improving the project
 
-Add your ideas here :)
+Some aniamtion could be added to navigation links in the header. For example making them a little bigger when hovering over.
