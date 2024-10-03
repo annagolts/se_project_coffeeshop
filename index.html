@@ -12,8 +12,9 @@
 
     <title>Coffe Shop</title>
     <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="pages/index.css" />
     <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+
     <link rel="shortcut icon" href="favicon_coffee_bean.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -106,9 +107,9 @@
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <div class="reservation__form form">
+          <form class="reservation__form form">
             <fieldset class="form__fieldset">
-              <lable for="name" class="form__lable">Name *</lable>
+              <label for="name" class="form__label">Name *</label>
               <input
                 type="text"
                 class="form__input"
@@ -116,26 +117,26 @@
                 placeholder="Name Surname"
                 required
               />
-              <lable for="number of guests" class="form__lable"
-                >Number of guests*</lable
+              <label for="guests-number" class="form__label"
+                >Number of guests*</label
               >
               <input
                 type="number"
                 class="form__input"
-                id="number of guests"
+                id="guests-number"
                 min="1"
                 max="8"
                 placeholder="1-8"
                 required
               />
-              <lable for="date" class="form__lable">Date & time *</lable>
+              <label for="date" class="form__label">Date & time *</label>
               <input
                 type="datetime-local"
                 class="form__input"
                 id="date"
                 required
               />
-              <lable for="email" class="form__lable">Your email *</lable>
+              <label for="email" class="form__label">Your email *</label>
               <input
                 type="email"
                 class="form__input"
@@ -147,11 +148,13 @@
             <button class="form__button" type="submit">
               <span class="form__button-text">Book a table</span>
             </button>
-            <lable class="form__checkbox-lable">
-              <input type="checkbox" class="form__checkbox" />
-              <p class="form__checkbox-text">I agree with the terms of use</p>
-            </lable>
-          </div>
+            <div class="form__checkbox-label">
+              <input type="checkbox" class="form__checkbox" id="checkbox" />
+              <label for="checkbox" class="form__checkbox-text"
+                >I agree with the terms of use</label
+              >
+            </div>
+          </form>
         </section>
         <section class="menu" id="menu"></section>
         <section class="about" id="contacts"></section>
