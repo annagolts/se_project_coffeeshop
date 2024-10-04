@@ -11,10 +11,9 @@
     <meta name="keywords" content="coffe shop, menu, book a table, recepies" />
 
     <title>Coffe Shop</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="pages/index.css" />
 
-    <link rel="shortcut icon" href="favicon_coffee_bean.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +26,7 @@
       <header class="header">
         <nav class="nav">
           <img
-            src="images/logo_coffeeshop_dark.svg"
+            src="./images/logo_coffeeshop_dark.svg"
             alt="coffe shop logo"
             class="nav__logo"
           />
@@ -36,11 +35,12 @@
               <a href="#recipes" class="nav__link">Recipes</a>
             </li>
             <li>
-              <a href="#menu" class="nav__link">Menu</a>
-            </li>
-            <li>
               <a href="#reservation" class="nav__link">Book a table</a>
             </li>
+            <li>
+              <a href="#menu" class="nav__link">Menu</a>
+            </li>
+
             <li>
               <a href="#contacts" class="nav__link">Contacts</a>
             </li>
@@ -58,17 +58,19 @@
 
         <img
           class="header__image"
-          src="/images/inside_coffee_shop.png"
+          src="./images/inside_coffee_shop.png"
           alt="Inside Coffe Shop"
         />
 
         <div class="header__footer">
-          <ul class="header__hours">
-            <li>Hours:</li>
-            <li>Monday - Friday (10:00 - 19:00)</li>
-            <li>Saturday - Sunday (11:00 - 18:00)</li>
-          </ul>
-          <p class="header__adress">
+          <div class="header__footer-content">
+            <p class="header__paragraph">Hours:</p>
+            <ul class="header__paragraph">
+              <li>Monday - Friday (10:00 - 19:00)</li>
+              <li>Saturday - Sunday (11:00 - 18:00)</li>
+            </ul>
+          </div>
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
@@ -81,8 +83,8 @@
             Check out some recipes we've collected for your home-brewing
             convenience:
           </p>
-          <div class="recipes__videos">
-            <div class="recipes__video">
+          <ul class="recipes__videos">
+            <li class="recipes__video">
               <iframe
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=nV1Mjbqg-qJjHqeU"
                 class="recipes__iframe"
@@ -91,8 +93,8 @@
                 <p class="recipes__caption-text">Aeropress recipe</p>
                 <p class="recipes__caption-text">~5 min</p>
               </div>
-            </div>
-            <div class="recipes__video">
+            </li>
+            <li class="recipes__video">
               <iframe
                 src="https://www.youtube.com/embed/st571DYYTR8?si=5-cp2jPfRfrdTy5y"
                 class="recipes__iframe"
@@ -101,8 +103,8 @@
                 <p class="recipes__caption-text">French Press recipe</p>
                 <p class="recipes__caption-text">~15 min</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
@@ -147,12 +149,11 @@
             <button class="form__button" type="submit">
               <span class="form__button-text">Book a table</span>
             </button>
-            <div class="form__checkbox-label">
+
+            <label class="form__lable form__lable_type_checkbox">
               <input type="checkbox" class="form__checkbox" id="checkbox" />
-              <label for="checkbox" class="form__checkbox-text"
-                >I agree with the terms of use</label
-              >
-            </div>
+              I agree with the terms of use</label
+            >
           </form>
         </section>
         <section class="menu" id="menu">
