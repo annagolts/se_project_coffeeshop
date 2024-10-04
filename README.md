@@ -13,4 +13,4 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 ## Plan on improving the project
 
-Some aniamtion could be added to navigation links in the header. For example making them a little bigger when hovering over.
+On each page there could be a link to get back to the main page so you would'n have to scroll up if you need to or look for different sections.
