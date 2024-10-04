@@ -30,6 +30,10 @@
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  transition: opacity 1s linear;
+}
+.nav__link:hover {
+  opacity: 0.5;
 }
 .nav__logo {
   position: relative;
